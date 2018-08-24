@@ -7,41 +7,46 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <script src="./splashScript.js" defer></script>
 </head>
 
 <body>
-  <div class="containter-fluid">
-    <div class="row top"></div>
-    <div class="row">
-      <div id="main-left" class="col-md-6">
-        <div class="row">
-          <div id="left-header" class="col-md-3 offset-md-4">
-            <h2 class="text-center">track bin</h2>
+  <div id="home-header"></div>
+  <div id="main">
+    <div class="containter-fluid">
+      <div class="row">
+        <div id="main-left" class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 offset-md-4">
+              <h2 id="track-text" class="text-center">track bin</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 offset-md-4">
+              <a href="./playlist.html">
+                <button type="button" class="btn btn-dark btn-lg">choose tracks
+                </button>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-4">
-            <a href="./playlist.html">
-              <button type="button" class="btn btn-dark btn-lg">choose tracks
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div id="main-right" class="col-md-6">
-        <div class="row"> <img src="./images/thriller.jpg" class="img-thumbnail img-cover" alt="album cover"> </div>
-        <div class="row"> <img src="./images/thriller.jpg" class="img-thumbnail img-cover" alt="album cover"> </div>
-        <div class="row"> <img src="./images/thriller.jpg" class="img-thumbnail img-cover" alt="album cover"> </div>
-      </div>
-      <!-- <img src="./resources/fadedTrack.jpg" id="track-img" class="img-fluid" alt="list of albums"> -->
-    </div>
-    <div class="row bottom">
-      <div class="col-md-3 offset-md-1">
-        <p class="copywrite">&copy; 2018 Jon McCarthy</p>
+        <div id="main-right" class="col-md-6">
+          <div id="main-right-content">
 
+          </div>
+          <!-- <img src="./resources/fadedTrack.jpg" id="track-img" class="img-fluid" alt="list of albums"> -->
+        </div>
       </div>
     </div>
+    <div class="footer">
+      <div class="row">
+        <div class="col-md-3 offset-md-1">
+          <p class="copywrite">&copy; 2018 Jon McCarthy</p>
+        </div>
+      </div>
+    </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
@@ -49,6 +54,8 @@
       crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </body>
 
 </html>

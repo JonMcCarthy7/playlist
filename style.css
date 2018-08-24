@@ -1,50 +1,89 @@
 body {
   background-color: #f4f4f4;
 }
+#main {
+  height: 86vh;
+}
 
-.top {
+#home-header {
   background-color: #828080;
-  height: 5vh;
+  height: 6vh;
 }
 
-.bottom {
+.footer {
   background-color: #828080;
-  height: 5vh;
+  height: 8vh;
 }
-
-.copywrite {
-  margin-top: 0.5rem;
-  color: #fff;
+#track-text {
+  padding-top: 8em;
 }
-
 #main-right {
   background-image: url(./resources/fadedTrack.jpg);
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  margin-top: -2em;
+  margin-top: -0.5em;
+}
+
+.copywrite {
+  margin-top: 1em;
+  color: #fff;
+}
+.img-thumbnail {
+  border: none;
+  background-color: transparent;
 }
 
 .img-cover {
-  margin-left: 16em;
+  margin-top: 1em;
   width: 13rem;
   height: 13rem;
-  margin-top: 2.5rem;
 }
 
-#left-header {
-  padding-top: 21rem;
+/* playlist page */
+#playlist-main {
+  height: 77vh;
 }
-
-/* playlist */
-.playlist-top {
+#playlist-header {
   background-color: #828080;
-  height: 13vh;
-  padding-left: 5em;
+  height: 15vh;
 }
 
-#header-text {
-  padding-top: 2em;
-  color: #fff;
+#playlist-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.playlist-header-text {
+  color: #f4f4f4;
+}
+
+#albums {
+  display: flex;
+  justify-content: space-around;
+  /* overflow: scroll; */
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+}
+
+.tracks-box {
+  height: 15rem;
+}
+
+.playlist-buttons {
+  padding-top: 1em;
+}
+
+#submit-bin {
+  margin-left: 1em;
+}
+
+.img-album {
+  width: 9rem;
+  height: 9rem;
 }
