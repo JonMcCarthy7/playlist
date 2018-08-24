@@ -1,0 +1,50 @@
+body {
+  background-color: #f4f4f4;
+}
+
+.top {
+  background-color: #828080;
+  height: 5vh;
+}
+
+.bottom {
+  background-color: #828080;
+  height: 5vh;
+}
+
+.copywrite {
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+#main-right {
+  background-image: url(./resources/fadedTrack.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  margin-top: -2em;
+}
+
+.img-cover {
+  margin-left: 16em;
+  width: 13rem;
+  height: 13rem;
+  margin-top: 2.5rem;
+}
+
+#left-header {
+  padding-top: 21rem;
+}
+
+/* playlist */
+.playlist-top {
+  background-color: #828080;
+  height: 13vh;
+  padding-left: 5em;
+}
+
+#header-text {
+  padding-top: 2em;
+  color: #fff;
+}
