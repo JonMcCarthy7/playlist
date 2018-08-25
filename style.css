@@ -87,3 +87,7 @@ body {
   width: 9rem;
   height: 9rem;
 }
+
+.album-tracks {
+  overflow: scroll;
+}
