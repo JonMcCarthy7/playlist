@@ -17,14 +17,10 @@ axios.get(url).then(response => {
     );
   });
   let albumList = document.querySelectorAll(".album-list");
-  // const findAlbum = albumId => {
-  //   return albums.id === albumId;
-  // };
-  console.log(albumList);
+  let playlist = [];
   albumList.forEach(el => {
     el.addEventListener("click", e => {
       let playlistCollection = [];
-      console.log(e.target);
       console.log(
         albums.find(album => album.id === Number(e.currentTarget.id))
       );
@@ -38,10 +34,30 @@ axios.get(url).then(response => {
         }</p>
       `
       );
-      playlistCollection.push(
-        albums.find(album => album.id === Number(e.currentTarget.id))
+      playlist.push(
+        JSON.stringify(
+          albums.find(album => album.id === Number(e.currentTarget.id))
+        )
       );
-      console.log(playlistCollention);
     });
   });
+  let clearTracks = document.getElementById("clear-tracks");
+  let submitBin = document.getElementById("submit-bin");
+  clearTracks.addEventListener("click", e => {
+    document.querySelector(".album-tracks").innerHTML = "";
+  });
+  submitBin.addEventListener("click", e => {
+    if (playlist) {
+      axios
+        .post("https://lit-fortress-6467.herokuapp.com/post", playlist)
+        .then(response => {
+          console.log(response.data);
+          document.querySelector(".album-tracks").innerHTML = "";
+        })
+        .catch(err => {
+          console.log(err.message);
+        });
+    }
+  });
+  console.log(playlist);
 });
