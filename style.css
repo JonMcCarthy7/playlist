@@ -62,7 +62,7 @@ body {
 #albums {
   display: flex;
   justify-content: space-around;
-  /* overflow: scroll; */
+  overflow: auto;
 }
 
 .box {
